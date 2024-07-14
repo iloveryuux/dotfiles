@@ -8,7 +8,7 @@
 
   "files.autoSave": "afterDelay",
   "files.autoSaveWhenNoErrors": true,
-  
+
   "editor.linkedEditing": true,
   "editor.cursorBlinking": "expand",
   "editor.fontSize": 14,
@@ -59,7 +59,7 @@
   },
 
   "explorer.fileNesting.patterns": {
-      "//": "Last update at 6/26/2024, 7:25:36 AM",
+      "//": "Last update at 7/8/2024, 3:16:14 AM",
       ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
       ".env": "*.env, .env.*, .envrc, env.d.ts",
       ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
@@ -127,7 +127,7 @@
       "*.go": "$(capture)_test.go",
       "*.java": "$(capture).class",
       "*.js": "$(capture).js.map, $(capture).*.js, $(capture)_*.js",
-      "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx, $(capture).less, $(capture).module.less",
+      "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx, $(capture).less, $(capture).module.less, $(capture).module.less.d.ts",
       "*.master": "$(capture).*.cs, $(capture).*.vb",
       "*.md": "$(capture).*",
       "*.mjs": "$(capture).mjs.map, $(capture).*.mjs, $(capture)_*.mjs",
@@ -139,9 +139,24 @@
       "*.resx": "$(capture).*.resx, $(capture).designer.cs, $(capture).designer.vb",
       "*.tex": "$(capture).acn, $(capture).acr, $(capture).alg, $(capture).aux, $(capture).bbl, $(capture).blg, $(capture).fdb_latexmk, $(capture).fls, $(capture).glg, $(capture).glo, $(capture).gls, $(capture).idx, $(capture).ind, $(capture).ist, $(capture).lof, $(capture).log, $(capture).lot, $(capture).out, $(capture).pdf, $(capture).synctex.gz, $(capture).toc, $(capture).xdv",
       "*.ts": "$(capture).js, $(capture).d.ts.map, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
-      "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx, $(capture).less, $(capture).module.less, $(capture).scss, $(capture).module.scss",
+      "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx, $(capture).less, $(capture).module.less, $(capture).module.less.d.ts, $(capture).scss, $(capture).module.scss, $(capture).module.scss.d.ts",
       "*.vbproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
       "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
+      "*.w": "$(capture).*.w, I$(capture).w",
       "*.xaml": "$(capture).xaml.cs"
+  },
+  "explorer.confirmPasteNative": false,
+  "scm.experimental.showHistoryGraph": true,
+  "workbench.editor.customLabels.patterns": {
+      "**/types/**": "📂 ${filename}.${extname}",
+      "**/pages/**": "📄 ${filename}.${extname}",
+      "**/components/**": "🧩 ${filename}.${extname}",
+      "**/services/**": "🔧 ${filename}.${extname}",
+      "**/utils/**": "🔍 ${filename}.${extname}",
+      "**/hooks/**": "🪝 ${filename}.${extname}",
+      "**/styles/**": "🎨 ${filename}.${extname}",
+      "**/assets/**": "🖼️ ${filename}.${extname}",
+      "**/contexts/**": "🗂️ ${filename}.${extname}",
+      "**/middleware/**": "🛡️ ${filename}.${extname}"
   }
 }
