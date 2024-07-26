@@ -1,0 +1,38 @@
+[color]
+    ui = auto
+
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+
+[color "diff"]
+    frag = magenta bold
+    meta = yellow bold
+    new = green bold
+    old = red bold
+    whitespace = red reverse
+
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+
+[core]
+    autocrlf = input
+    excludesFile = ~/.gitignore_global
+
+[init]
+    defaultBranch = master
+
+[merge]
+    conflictStyle = diff3
+
+[pull]
+    rebase = true
+
+[user]
+    email = martiin17jr@gmail.com
+
+[web]
+    browser = firefox
