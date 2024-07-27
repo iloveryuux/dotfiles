@@ -490,4 +490,8 @@ zsdoc/data
 /tests/_output/*
 !/tests/_output/.gitkeep
 
+# Lockfiles
+pnpm-lock.*
+package-lock.*
+
 # End of https://www.toptal.com/developers/gitignore/api/git,zsh,node,visualstudiocode,database,rust,python,pythonvanilla,lua,go
